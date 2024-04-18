@@ -1,14 +1,10 @@
 ---
-import Header from '../components/Header.astro';
-
 interface Props {
 	description: string;
 	title: string;
 }
-
 const { description, title } = Astro.props;
 ---
-
 <!doctype html>
 <html lang="es">
 	<head>
@@ -24,13 +20,10 @@ const { description, title } = Astro.props;
 		<slot />
 	</body>
 </html>
+
 <style is:global>
-	:root {
-		color-scheme: light dark;
-	}
-	html {
-		font-family: system-ui, sans-serif;
-	}
+	:root { color-scheme: light dark; }
+	html { font-family: system-ui, sans-serif; }
 	body{
 		display: flex;
 		flex-direction: column;
