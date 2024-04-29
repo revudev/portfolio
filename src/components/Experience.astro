@@ -1,0 +1,21 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "04/2024 - Actualmente",
+    title: "Fullstack dev",
+    company: "Neoris",
+    description:
+      "Desarrollo de páginas web con React y Node.js mediante la metodología Agile. ",
+    link: "https://neoris.com/",
+  },
+]
+---
+
+<ol class="items-center sm:flex">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <ExperienceItem {...experiencie} />
+    ))
+  }
+</ol>

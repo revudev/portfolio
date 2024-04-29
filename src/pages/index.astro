@@ -1,15 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Links from '../components/Links.astro';
+import Section from '../components/Section.astro';
 import CVIcon from '../components/icons/CV.astro';
 import MailIcon from '../components/icons/Mail.astro';
 import GitHubIcon from '../components/icons/GitHub.astro';
 import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import Experience from '../components/Experience.astro';
+import Building from '../components/icons/Building.astro';
 ---
 <Layout title="Portfolio de Denys Revutskyi - Programador y Desarrollador Web" 
 		description="Contrata a Denys Revutskyi, desarrollador con conocimiento en frontend y en backend, Angular, React, Astro, Node.js">
 	<main>
-		<section class="w-full lg:w-[900px] mx-auto py-14">
+		<Section class="pb-10 py-14">
 			<h1 class="flex flex-row text-5xl font-bold text-white">
 				Denys Revutskyi - WebDev
 			</h1>
@@ -25,8 +28,15 @@ import LinkedInIcon from '../components/icons/LinkedIn.astro';
 				<Links href="https://github.com/leid04"><GitHubIcon class="size-6"/>GitHub</Links> 
 				<Links href="https://www.linkedin.com/in/denys2004/"><LinkedInIcon class="size-6"/>LinkedIn</Links>
 				<Links href="/CV.pdf"><CVIcon class="size-6"/>CV-Denys</Links>
-				<Links href="mailto:denys.msi04@gmail.com"><MailIcon class="size-6"/>Gmail</Links>
+				<Links href="mailto:denys.msi04@gmail.com"><MailIcon class="size-6"/>denys.msi04@gmail.com</Links>
 			</nav>
-		</section>
+		</Section>
+		<Section>
+			<h2 class="flex items-center mb-5 text-4xl font-semibold gap-x-3">
+				<Building class="size-6" />
+					Experiencia laboral
+			</h2>
+			<Experience />
+		</Section>
 	</main>
 </Layout>
