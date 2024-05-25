@@ -1,4 +1,6 @@
 ---
+import '@fontsource/comfortaa';
+
 interface Props {
 	description: string;
 	title: string;
@@ -22,7 +24,7 @@ const { description, title } = Astro.props;
 
 <style is:global>
 	:root { color-scheme: light dark; }
-	html { font-family: system-ui, sans-serif; }
+	html { font-family: 'Comfortaa', system-ui; }
 	body{
 		display: flex;
 		flex-direction: column;
